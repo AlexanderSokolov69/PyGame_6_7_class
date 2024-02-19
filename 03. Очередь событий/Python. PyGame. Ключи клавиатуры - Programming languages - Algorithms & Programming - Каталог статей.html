@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Python. PyGame. Ключи клавиатуры - Programming languages - Algorithms & Programming - Каталог статей - BZFAR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<!--[if lt IE 9]>
+<script data-ad-client="ca-pub-1738903104797806" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript">
+ var e = ("header,footer,article,aside,section,nav").split(',');
+ for (var i = 0; i < e.length; i++) {
+ document.createElement(e[i]);
+ }
+ </script>
+<![endif]-->
+ <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="/_st/my.css">
+
+
+	<link rel="stylesheet" href="/.s/src/base.min.css?v=191643" />
+	<link rel="stylesheet" href="/.s/src/layer7.min.css?v=191643" />
+
+	<script src="/.s/src/jquery-1.12.4.min.js"></script>
+	
+	<script src="/.s/src/uwnd.min.js?v=191643"></script>
+	<script src="//s67.ucoz.net/cgi/uutils.fcg?a=uSD&ca=2&ug=999&isp=1&r=0.449747703892712"></script>
+<script>/* --- UCOZ-JS-INIT_CODE --- */
+	window.ulb = {photoPage:"Перейти на страницу с фотографией.", closeBtn:"Закрыть", error:"Запрошенный контент не может быть загружен. Пожалуйста, попробуйте позже.", next:"Следующий", prev:"Предыдущий", btnPlay:"Начать слайдшоу", btnToggle:"Изменить размер", };
+/* --- UCOZ-JS-END --- */</script>
+
+	<link rel="stylesheet" href="/.s/src/ulightbox/ulightbox.min.css" />
+	<link rel="stylesheet" href="/.s/src/socCom.min.css" />
+	<link rel="stylesheet" href="/.s/src/social.css" />
+	<script src="/.s/src/ulightbox/ulightbox.min.js"></script>
+	<script src="/.s/src/socCom.min.js"></script>
+	<script src="//sys000.ucoz.net/cgi/uutils.fcg?a=soc_comment_get_data&site=ebzfar"></script>
+	<script>
+/* --- UCOZ-JS-DATA --- */
+window.uCoz = {"language":"ru","country":"RU","site":{"id":"ebzfar","domain":"bzfar.org","host":"bzfar.ucoz.net"},"sign":{"5255":"Помощник"},"ssid":"312705663536003312350"};
+/* --- UCOZ-JS-CODE --- */
+
+		function eRateEntry(select, id, a = 65, mod = 'publ', mark = +select.value, path = '', ajax, soc) {
+			if (mod == 'shop') { path = `/${ id }/edit`; ajax = 2; }
+			( !!select ? confirm(select.selectedOptions[0].textContent.trim() + '?') : true )
+			&& _uPostForm('', { type:'POST', url:'/' + mod + path, data:{ a, id, mark, mod, ajax, ...soc } });
+		}
+
+		function updateRateControls(id, newRate) {
+			let entryItem = self['entryID' + id] || self['comEnt' + id];
+			let rateWrapper = entryItem.querySelector('.u-rate-wrapper');
+			if (rateWrapper && newRate) rateWrapper.innerHTML = newRate;
+			if (entryItem) entryItem.querySelectorAll('.u-rate-btn').forEach(btn => btn.remove())
+		}
+
+	let ajaxPageController = {
+		showLoader : function() { document.getElementById('myGrid')?.classList.remove('u-hidden'); },
+		hideLoader : function() { document.getElementById('myGrid')?.classList.add('u-hidden'); },
+	};
+ function uSocialLogin(t) {
+			var params = {"ok":{"height":390,"width":710},"vkontakte":{"height":400,"width":790},"yandex":{"width":870,"height":515},"facebook":{"width":950,"height":520},"google":{"width":700,"height":600}};
+			var ref = escape(location.protocol + '//' + ('www.bzfar.org' || location.hostname) + location.pathname + ((location.hash ? ( location.search ? location.search + '&' : '?' ) + 'rnd=' + Date.now() + location.hash : ( location.search || '' ))));
+			window.open('/'+t+'?ref='+ref,'conwin','width='+params[t].width+',height='+params[t].height+',status=1,resizable=1,left='+parseInt((screen.availWidth/2)-(params[t].width/2))+',top='+parseInt((screen.availHeight/2)-(params[t].height/2)-20)+'screenX='+parseInt((screen.availWidth/2)-(params[t].width/2))+',screenY='+parseInt((screen.availHeight/2)-(params[t].height/2)-20));
+			return false;
+		}
+		function TelegramAuth(user){
+			user['a'] = 9; user['m'] = 'telegram';
+			_uPostForm('', {type: 'POST', url: '/index/sub', data: user});
+		}
+function loginPopupForm(params = {}) { new _uWnd('LF', ' ', -250, -100, { closeonesc:1, resize:1 }, { url:'/index/40' + (params.urlParams ? '?'+params.urlParams : '') }) }
+/* --- UCOZ-JS-END --- */
+</script>
+
+	<style>.UhideBlock{display:none; }</style>
+	<script type="text/javascript">new Image().src = "//counter.yadro.ru/hit;noadsru?r"+escape(document.referrer)+(screen&&";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth||screen.pixelDepth))+";u"+escape(document.URL)+";"+Date.now();</script>
+</head>
+<body class="base">
+<div id="utbr8214" rel="s67"></div>
+
+<header class="header">
+	<div class="nav-row clr">
+		<div class="cont-wrap">
+			<div class="show-menu"></div>
+			<a class="logo-lnk" href="https://bzfar.org/"  title="Главная"><!-- <logo> -->ТВОЙ BZFAR<!-- </logo> --></a>
+			<!-- <sblock_nmenu> -->
+
+				<nav class="main-menu"><!-- <bc> --><div id="uNMenuDiv1" class="uMenuV"><ul class="uMenuRoot">
+<li class="uWithSubmenu"><a  href="/" ><span>Меню</span></a><ul>
+<li><a  href="/load" ><span>Методическая копилка</span></a></li>
+<li><a  href="/load/informatika/umk/programmirovanie_na_python/2-1-0-14" ><span>Программирование на Python</span></a></li>
+<li class="uWithSubmenu"><a  href="/load/portfolio_uchitelja_zelenova_borisa_aleksandrovicha/1-1-0-52" ><span>Портфолио</span></a><ul>
+<li><a  href="/load/portfolio_uchitelja_zelenova_borisa_aleksandrovicha/1-1-0-52" ><span>Зеленов Борис </span></a></li></ul></li>
+<li><a  href="/index/konkurs-reels/0-3" ><span>Обратная связь</span></a></li></ul></li>
+<li class="uWithSubmenu"><a  href="https://bzfar.ucoz.net/load/informatika/umk/ssylki_na_klassy/2-1-0-9" ><span>NIS / НИШ</span></a><ul>
+<li><a  href="https://www.bzfar.org/load/informatika/umk/informatika_7_klass/2-1-0-50" ><span>Класс 7</span></a></li>
+<li><a  href="/load/informatika/umk/8_klass/2-1-0-4" ><span>Класс 8</span></a></li>
+<li><a  href="/load/informatika/umk/9_klass/2-1-0-5" ><span>Класс 9</span></a></li>
+<li><a  href="/load/informatika/umk/10_klass/2-1-0-1" ><span>Класс 10</span></a></li>
+<li class="uWithSubmenu"><a  href="/load/informatika/umk/11_klass/2-1-0-2" ><span>Класс 11</span></a><ul>
+<li><a  href="https://www.bzfar.org/load/informatika/computer_science/programmirovanie_na_python_11_klass/11-1-0-48" ><span>Programming. Grade 11</span></a></li></ul></li>
+<li class="uWithSubmenu"><a  href="/load/informatika/umk/12_klass/2-1-0-6" ><span>Класс 12</span></a><ul>
+<li><a  href="https://www.bzfar.org/load/informatika/computer_science/python_programming_grade_12/11-1-0-56" ><span>Programming. Grade 12</span></a></li>
+<li><a  href="https://www.bzfar.org/publ/computer_system_hardware/input_ouput_devices/gotovimsja_k_ehkzamenam_12_klass/10-1-0-151" ><span>Exam preparation/Готовимся к экзаменам</span></a></li></ul></li>
+<li><a  href="http://www.bzfar.org/index/project-work/0-12" ><span>Project work</span></a></li></ul></li>
+<li class="uWithSubmenu"><a class=" uMenuItemA" href="/publ" ><span>Lessons / Уроки</span></a><ul>
+<li><a  href="https://www.bzfar.org/publ/algorithms_programming/algorithms/programmirovanie_na_python_11_klass_programma/56-1-0-184" ><span>Программирование на Python</span></a></li></ul></li>
+<li><a  href="/forum" ><span>Сетевое сообщество учителей</span></a></li></ul></div><!-- </bc> --></nav>
+			
+<!-- </sblock_nmenu> -->
+		</div>
+	</div>
+
+ </header>
+
+<!-- </header> -->
+
+<section class="middle clr">
+
+<!-- <middle> -->
+<div class="u-container">
+	<div class="content">
+		<!-- <body> --><div class="breadcrumbs-wrapper">
+	<div class="breadcrumbs"><a href="https://bzfar.org/"><!--<s5176>-->Главная<!--</s>--></a> &raquo; <a href="/publ/"><!--<s5208>-->Статьи<!--</s>--></a> &raquo; <a href="/publ/algorithms_programming/7">Algorithms & Programming</a> &raquo; <a href="/publ/algorithms_programming/programming_languages/42">Programming languages</a></div>
+	
+</div><hr />
+<div class="eTitle" style="padding-bottom:3px;">Python. PyGame. Ключи клавиатуры</div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1738903104797806"
+     data-ad-slot="5164598374"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="2" class="eBlock">
+<tr><td class="eText" colspan="2"><p style="text-align: center;"><strong><span style="font-size:22px;">Python. PyGame. Коды клавиш для программирования событий клавиатуры.</span></strong></p>
+
+<p><span style="font-size:18px;">В библиотеке pygame для проверки нажатия конкретной клавиши используется ключ клавиши. Определить клавишу можно, проверив её код:<br />
+Например,&nbsp;pygame.key.get_pressed()[pygame.<strong>K_LEFT</strong>]</span></p>
+<link href="https://www.bzfar.org/TraceTable/style.css" rel="stylesheet" />
+<table border="1" class="alternateTable" id="traceTable">
+ <tbody>
+ <tr>
+ <td><span style="font-size:16px;"><strong>pygame Constant</strong></span></td>
+ <td><span style="font-size:16px;"><strong>ASCII</strong></span></td>
+ <td><span style="font-size:16px;"><strong>Description</strong></span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_BACKSPACE</span></td>
+ <td><span style="font-size:16px;">&#92;b</span></td>
+ <td><span style="font-size:16px;">backspace</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_TAB</span></td>
+ <td><span style="font-size:16px;">&#92;t</span></td>
+ <td><span style="font-size:16px;">tab</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_CLEAR</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">clear</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_RETURN</span></td>
+ <td><span style="font-size:16px;">&#92;r</span></td>
+ <td><span style="font-size:16px;">Клавиша Enter</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_PAUSE</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">pause</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_ESCAPE</span></td>
+ <td><span style="font-size:16px;">^[</span></td>
+ <td><span style="font-size:16px;">Клавиша Esc</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_SPACE</span></td>
+ <td>&nbsp;</td>
+ <td>Клавиша Пробел</td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_EXCLAIM</span></td>
+ <td><span style="font-size:16px;">!</span></td>
+ <td><span style="font-size:16px;">exclaim</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_QUOTEDBL</span></td>
+ <td><span style="font-size:16px;">&quot;</span></td>
+ <td><span style="font-size:16px;">quotedbl</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_HASH</span></td>
+ <td><span style="font-size:16px;">#</span></td>
+ <td><span style="font-size:16px;">hash</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_DOLLAR</span></td>
+ <td><span style="font-size:16px;">$</span></td>
+ <td><span style="font-size:16px;">dollar</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_AMPERSAND</span></td>
+ <td><span style="font-size:16px;">&amp;</span></td>
+ <td><span style="font-size:16px;">ampersand</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_QUOTE</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">quote</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_LEFTPAREN</span></td>
+ <td><span style="font-size:16px;">(</span></td>
+ <td><span style="font-size:16px;">left parenthesis</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_RIGHTPAREN</span></td>
+ <td><span style="font-size:16px;">)</span></td>
+ <td><span style="font-size:16px;">right parenthesis</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_ASTERISK</span></td>
+ <td><span style="font-size:16px;">*</span></td>
+ <td><span style="font-size:16px;">asterisk</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_PLUS</span></td>
+ <td><span style="font-size:16px;">+</span></td>
+ <td><span style="font-size:16px;">plus sign</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_COMMA</span></td>
+ <td><span style="font-size:16px;">,</span></td>
+ <td><span style="font-size:16px;">comma</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_MINUS</span></td>
+ <td><span style="font-size:16px;">-</span></td>
+ <td><span style="font-size:16px;">minus sign</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_PERIOD</span></td>
+ <td><span style="font-size:16px;">.</span></td>
+ <td><span style="font-size:16px;">period</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_SLASH</span></td>
+ <td><span style="font-size:16px;">/</span></td>
+ <td><span style="font-size:16px;">forward slash</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_0</span></td>
+ <td><span style="font-size:16px;">0</span></td>
+ <td><span style="font-size:16px;">0</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_1</span></td>
+ <td><span style="font-size:16px;">1</span></td>
+ <td><span style="font-size:16px;">1</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_2</span></td>
+ <td><span style="font-size:16px;">2</span></td>
+ <td><span style="font-size:16px;">2</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_3</span></td>
+ <td><span style="font-size:16px;">3</span></td>
+ <td><span style="font-size:16px;">3</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_4</span></td>
+ <td><span style="font-size:16px;">4</span></td>
+ <td><span style="font-size:16px;">4</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_5</span></td>
+ <td><span style="font-size:16px;">5</span></td>
+ <td><span style="font-size:16px;">5</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_6</span></td>
+ <td><span style="font-size:16px;">6</span></td>
+ <td><span style="font-size:16px;">6</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_7</span></td>
+ <td><span style="font-size:16px;">7</span></td>
+ <td><span style="font-size:16px;">7</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_8</span></td>
+ <td><span style="font-size:16px;">8</span></td>
+ <td><span style="font-size:16px;">8</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_9</span></td>
+ <td><span style="font-size:16px;">9</span></td>
+ <td><span style="font-size:16px;">9</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_COLON</span></td>
+ <td><span style="font-size:16px;">:</span></td>
+ <td><span style="font-size:16px;">colon</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_SEMICOLON</span></td>
+ <td><span style="font-size:16px;">;</span></td>
+ <td><span style="font-size:16px;">semicolon</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_LESS</span></td>
+ <td><span style="font-size:16px;">&lt;</span></td>
+ <td><span style="font-size:16px;">less-than sign</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_EQUALS</span></td>
+ <td><span style="font-size:16px;">=</span></td>
+ <td><span style="font-size:16px;">equals sign</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_GREATER</span></td>
+ <td><span style="font-size:16px;">&gt;</span></td>
+ <td><span style="font-size:16px;">greater-than sign</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_QUESTION</span></td>
+ <td><span style="font-size:16px;">?</span></td>
+ <td><span style="font-size:16px;">question mark</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_AT</span></td>
+ <td><span style="font-size:16px;">@</span></td>
+ <td><span style="font-size:16px;">at</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_LEFTBRACKET</span></td>
+ <td><span style="font-size:16px;">[</span></td>
+ <td><span style="font-size:16px;">left bracket</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_BACKSLASH</span></td>
+ <td><span style="font-size:16px;">&#92;</span></td>
+ <td><span style="font-size:16px;">backslash</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_RIGHTBRACKET</span></td>
+ <td><span style="font-size:16px;">]</span></td>
+ <td><span style="font-size:16px;">right bracket</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_CARET</span></td>
+ <td><span style="font-size:16px;">^</span></td>
+ <td><span style="font-size:16px;">caret</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_UNDERSCORE</span></td>
+ <td><span style="font-size:16px;">_</span></td>
+ <td><span style="font-size:16px;">underscore</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_BACKQUOTE</span></td>
+ <td><span style="font-size:16px;">`</span></td>
+ <td><span style="font-size:16px;">grave</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_a</span></td>
+ <td><span style="font-size:16px;">a</span></td>
+ <td><span style="font-size:16px;">a</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_b</span></td>
+ <td><span style="font-size:16px;">b</span></td>
+ <td><span style="font-size:16px;">b</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_c</span></td>
+ <td><span style="font-size:16px;">c</span></td>
+ <td><span style="font-size:16px;">c</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_d</span></td>
+ <td><span style="font-size:16px;">d</span></td>
+ <td><span style="font-size:16px;">d</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_e</span></td>
+ <td><span style="font-size:16px;">e</span></td>
+ <td><span style="font-size:16px;">e</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_f</span></td>
+ <td><span style="font-size:16px;">f</span></td>
+ <td><span style="font-size:16px;">f</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_g</span></td>
+ <td><span style="font-size:16px;">g</span></td>
+ <td><span style="font-size:16px;">g</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_h</span></td>
+ <td><span style="font-size:16px;">h</span></td>
+ <td><span style="font-size:16px;">h</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_i</span></td>
+ <td><span style="font-size:16px;">i</span></td>
+ <td><span style="font-size:16px;">i</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_j</span></td>
+ <td><span style="font-size:16px;">j</span></td>
+ <td><span style="font-size:16px;">j</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_k</span></td>
+ <td><span style="font-size:16px;">k</span></td>
+ <td><span style="font-size:16px;">k</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_l</span></td>
+ <td><span style="font-size:16px;">l</span></td>
+ <td><span style="font-size:16px;">l</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_m</span></td>
+ <td><span style="font-size:16px;">m</span></td>
+ <td><span style="font-size:16px;">m</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_n</span></td>
+ <td><span style="font-size:16px;">n</span></td>
+ <td><span style="font-size:16px;">n</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_o</span></td>
+ <td><span style="font-size:16px;">o</span></td>
+ <td><span style="font-size:16px;">o</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_p</span></td>
+ <td><span style="font-size:16px;">p</span></td>
+ <td><span style="font-size:16px;">p</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_q</span></td>
+ <td><span style="font-size:16px;">q</span></td>
+ <td><span style="font-size:16px;">q</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_r</span></td>
+ <td><span style="font-size:16px;">r</span></td>
+ <td><span style="font-size:16px;">r</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_s</span></td>
+ <td><span style="font-size:16px;">s</span></td>
+ <td><span style="font-size:16px;">s</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_t</span></td>
+ <td><span style="font-size:16px;">t</span></td>
+ <td><span style="font-size:16px;">t</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_u</span></td>
+ <td><span style="font-size:16px;">u</span></td>
+ <td><span style="font-size:16px;">u</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_v</span></td>
+ <td><span style="font-size:16px;">v</span></td>
+ <td><span style="font-size:16px;">v</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_w</span></td>
+ <td><span style="font-size:16px;">w</span></td>
+ <td><span style="font-size:16px;">w</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_x</span></td>
+ <td><span style="font-size:16px;">x</span></td>
+ <td><span style="font-size:16px;">x</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_y</span></td>
+ <td><span style="font-size:16px;">y</span></td>
+ <td><span style="font-size:16px;">y</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_z</span></td>
+ <td><span style="font-size:16px;">z</span></td>
+ <td><span style="font-size:16px;">z</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_DELETE</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша delete на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP0</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша 0 на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP1</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша 1 на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP2</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша 2 на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP3</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша 3 на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP4</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша 4 на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP5</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша 5 на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP6</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша 6 на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP7</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша 7 на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP8</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша 8 на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP9</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша 9 на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP_PERIOD</span></td>
+ <td><span style="font-size:16px;">.</span></td>
+ <td><span style="font-size:16px;">Клавиша . на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP_DIVIDE</span></td>
+ <td><span style="font-size:16px;">/</span></td>
+ <td><span style="font-size:16px;">Клавиша / на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP_MULTIPLY</span></td>
+ <td><span style="font-size:16px;">*</span></td>
+ <td><span style="font-size:16px;">Клавиша * на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP_MINUS</span></td>
+ <td><span style="font-size:16px;">-</span></td>
+ <td><span style="font-size:16px;">Клавиша - на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP_PLUS</span></td>
+ <td><span style="font-size:16px;">+</span></td>
+ <td><span style="font-size:16px;">Клавиша + на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP_ENTER</span></td>
+ <td><span style="font-size:16px;">&#92;r</span></td>
+ <td><span style="font-size:16px;">Клавиша Enter на дополнительном поле</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_KP_EQUALS</span></td>
+ <td><span style="font-size:16px;">=</span></td>
+ <td><span style="font-size:16px;">keypad equals</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_UP</span></td>
+ <td>&nbsp;</td>
+ <td>стрелка вверх</td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_DOWN</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">стрелка вниз</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_RIGHT</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">стрелка вправо</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_LEFT</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">стрелка влево</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_INSERT</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша insert</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_HOME</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша home</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_END</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша end</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_PAGEUP</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша page up</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_PAGEDOWN</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша page down</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F1</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F1</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F2</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F2</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F3</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F3</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F4</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F4</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F5</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F5</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F6</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F6</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F7</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F7</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F8</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F8</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F9</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F9</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F10</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F10</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F11</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F11</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F12</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F12</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F13</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F13</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F14</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F14</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_F15</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша F15</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_NUMLOCK</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша numlock</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_CAPSLOCK</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша capslock</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_SCROLLOCK</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша scrollock</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_RSHIFT</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Правый shift</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_LSHIFT</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Левый shift</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_RCTRL</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Правый control</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_LCTRL</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Левый control</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_RALT</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Правый alt</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_LALT</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Левый alt</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_RMETA</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">right meta</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_LMETA</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">left meta</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_LSUPER</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">left Windows key</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_RSUPER</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">right Windows key</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_MODE</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">mode shift</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_HELP</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">help</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_PRINT</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Клавиша print screen (PrtSc)</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_SYSREQ</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">sysrq</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_BREAK</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">break</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_MENU</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">menu</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_POWER</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">power</span></td>
+ </tr>
+ <tr>
+ <td><span style="font-size:16px;">K_EURO</span></td>
+ <td>&nbsp;</td>
+ <td><span style="font-size:16px;">Euro</span></td>
+ </tr>
+ </tbody>
+</table>
+
+<p><span style="font-size:18px;"><strong>pygame.key.get_pressed()</strong> &ndash; метод, который получает состояние всех кнопок клавиатуры, т.е. с помощью этого метода мы можем проверять была ли нажата какая либо клавиша.<br />
+Для проверки была ли нажата/отжата клавиша используем следующий код:</span></p>
+
+<p><span style="font-size:18px;">if event.type == pygame.KEYDOWN:<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if pygame.key.get_pressed()[pygame.K_RIGHT]:<br />
+OR<br />
+if event.type == pygame.KEYUP:<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if pygame.key.get_pressed()[pygame.K_TAB]:</span><br />
+&nbsp;</p> </td></tr>
+<tr><td class="eDetails1" colspan="2">
+<div class="rate-stars-wrapper" style="float:right">
+			<style type="text/css">
+				.u-star-rating-13 { list-style:none; margin:0px; padding:0px; width:65px; height:13px; position:relative; background: url('/.s/t/2001/rating13.png') top left repeat-x }
+				.u-star-rating-13 li{ padding:0px; margin:0px; float:left }
+				.u-star-rating-13 li a { display:block;width:13px;height: 13px;line-height:13px;text-decoration:none;text-indent:-9000px;z-index:20;position:absolute;padding: 0px;overflow:hidden }
+				.u-star-rating-13 li a:hover { background: url('/.s/t/2001/rating13.png') left center;z-index:2;left:0px;border:none }
+				.u-star-rating-13 a.u-one-star { left:0px }
+				.u-star-rating-13 a.u-one-star:hover { width:13px }
+				.u-star-rating-13 a.u-two-stars { left:13px }
+				.u-star-rating-13 a.u-two-stars:hover { width:26px }
+				.u-star-rating-13 a.u-three-stars { left:26px }
+				.u-star-rating-13 a.u-three-stars:hover { width:39px }
+				.u-star-rating-13 a.u-four-stars { left:39px }
+				.u-star-rating-13 a.u-four-stars:hover { width:52px }
+				.u-star-rating-13 a.u-five-stars { left:52px }
+				.u-star-rating-13 a.u-five-stars:hover { width:65px }
+				.u-star-rating-13 li.u-current-rating { top:0 !important; left:0 !important;margin:0 !important;padding:0 !important;outline:none;background: url('/.s/t/2001/rating13.png') left bottom;position: absolute;height:13px !important;line-height:13px !important;display:block;text-indent:-9000px;z-index:1 }
+			</style><script>
+				var usrarids = {};
+				function ustarrating(id, mark) {
+					if (!usrarids[id]) {
+						usrarids[id] = 1;
+						$(".u-star-li-"+id).hide();
+						_uPostForm('', {type:'POST', url:'/publ/', data:{
+							'a':'65',
+							'id':id,
+							'mark':mark,
+							'mod':'publ',
+							'ajax':'2'
+						}});
+					}
+				}
+			</script><ul id="uStarRating120" class="uStarRating120 u-star-rating-13" title="Рейтинг: 4.4/7">
+			<li id="uCurStarRating120" class="u-current-rating uCurStarRating120" style="width:88%;"></li><li class="u-star-li-120"><a href="#" onclick="ustarrating('120', 1); return false;" class="u-one-star">1</a></li>
+				<li class="u-star-li-120"><a href="#" onclick="ustarrating('120', 2); return false;" class="u-two-stars">2</a></li>
+				<li class="u-star-li-120"><a href="#" onclick="ustarrating('120', 3); return false;" class="u-three-stars">3</a></li>
+				<li class="u-star-li-120"><a href="#" onclick="ustarrating('120', 4); return false;" class="u-four-stars">4</a></li>
+				<li class="u-star-li-120"><a href="#" onclick="ustarrating('120', 5); return false;" class="u-five-stars">5</a></li></ul></div><span class="e-category"><span class="ed-title"><!--<s3179>-->Категория<!--</s>-->:</span> <span class="ed-value"><a href="/publ/algorithms_programming/programming_languages/42">Programming languages</a></span></span><span class="ed-sep"> | </span><span class="e-add"><span class="ed-title"><!--<s3178>-->Добавил<!--</s>-->:</span> <span class="ed-value"><a href="javascript:;" rel="nofollow" onclick="window.open('/index/8-1', 'up1', 'scrollbars=1,top=0,left=0,resizable=1,width=700,height=375'); return false;">bzfar77</a> (08.02.2021) </span></span>  </span></span></td></tr>
+	<tr><td class="eDetails2" colspan="2"><span class="e-reads"><span class="ed-title"><!--<s3177>-->Просмотров<!--</s>-->:</span> <span class="ed-value">21845</span></span> <span class="ed-sep"> | </span><span class="e-tags"><span class="ed-title"><!--<s5308>-->Теги<!--</s>-->:</span> <span class="ed-value"><noindex><a href="/search/PyGame/" rel="nofollow" class="eTag">PyGame</a>, <a href="/search/key/" rel="nofollow" class="eTag">key</a>, <a href="/search/keypressed/" rel="nofollow" class="eTag">keypressed</a>, <a href="/search/ascii/" rel="nofollow" class="eTag">ascii</a></noindex></span></span>
+<span class="ed-sep"> | </span><span class="e-rating"><span class="ed-title"><!--<s3119>-->Рейтинг<!--</s>-->:</span> <span class="ed-value"><span id="entRating120">4.4</span>/<span id="entRated120">7</span></span></span></td></tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td width="60%" height="25"><!--<s5183>-->Всего комментариев<!--</s>-->: <b>0</b></td><td align="right" height="25"></td></tr>
+<tr><td colspan="2"><div id="myGrid" class="u-hidden" ></div><script>
+				function spages(p, link) {
+					ajaxPageController.showLoader();
+				_uPostForm('', { url:''+atob('L3B1YmwvcHl0aG9uX2tsanVjaGlfa2xhdmlhdHVyeS80Mg==')+'-'+p+'-0-120-987-'+Math.floor(Math.random()*1e8), type:'POST', data:{ soc_type:self.scurrent, sdata:self.ssdata && ssdata[ self.scurrent ] } });
+				}
+			</script>
+			<div id="comments"></div>
+			<div id="newEntryT"></div>
+			<div id="allEntries"></div>
+			<div id="newEntryB"></div>
+			<script>
+				(function() {
+					'use strict';
+					var commentID = ( /comEnt(\d+)/.exec(location.hash) || {} )[1];
+					if (!commentID) {
+						return window.console && console.info && console.info('comments, goto page', 'no comment id');
+					}
+					var selector = '#comEnt' + commentID;
+					var target = $(selector);
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: ( target.eq(0).offset() || { top: 0 } ).top
+						}, 'fast');
+						return window.console && console.info && console.info('comments, goto page', 'found element', selector);
+					}
+					$.get('/index/802', {
+						id: commentID
+					}).then(function(response) {
+						if (!response.page) {
+							return window.console && console.warn && console.warn('comments, goto page', 'no page within response', response);
+						}
+						spages(response.page);
+						setTimeout(function() {
+							target = $(selector);
+							if (!target.length) {
+								return window.console && console.warn && console.warn('comments, goto page', 'comment element not found', selector);
+							}
+							$('html, body').animate({
+								scrollTop: ( target.eq(0).offset() || { top: 0 } ).top
+							}, 'fast');
+							return window.console && console.info && console.info('comments, goto page', 'scrolling to', selector);
+						}, 500);
+					}, function(response) {
+						return window.console && console.error && console.error('comments, goto page', response.responseJSON);
+					});
+				})();
+			</script>
+		</td></tr>
+<tr><td colspan="2" align="center"></td></tr>
+<tr><td colspan="2" height="10"></td></tr></table>
+<form name="socail_details" id="socail_details" onsubmit="return false;">
+						   <input type="hidden" name="social" value="">
+						   <input type="hidden" name="data" value="">
+						   <input type="hidden" name="id" value="120">
+						   <input type="hidden" name="ssid" value="312705663536003312350">
+					   </form><div id="postFormContent" class="">
+				<form method="post" name="addform" id="acform" action="/index/" onsubmit="addcom(); return false;"><script>
+		function _dS(a){var b=a.split(''),c=b.pop();return b.map(function(d){var e=d.charCodeAt(0)-c;return String.fromCharCode(32>e?127-(32-e):e)}).join('')}
+		var _y8M = _dS('Erwy~})}#ynF+qrmmnw+)wjvnF+|x|+) ju~nF+;?B;9=:@@B+)8G9');
+	function addcom(f) {
+		if (document.getElementById('addcBut')) {
+			document.getElementById('addcBut').disabled = true;
+		} else {
+			try {document.addform.submit.disabled = true;} catch(e) {}
+		}
+		if (document.getElementById('eMessage')) {
+			document.getElementById('eMessage').innerHTML = '<span style="color:#999"><img src="/.s/img/ma/m/i2.gif" border="0" align="absmiddle" width="13" height="13"> Идет передача данных...</span>';
+		}
+		_uPostForm('acform', {type:'POST', url:'/index/'});
+	}
+document.write(_y8M);</script>
+				<div class="mc-widget">
+					<script>
+						var socRedirect = location.protocol + '//' + ('www.bzfar.org' || location.hostname) + location.pathname + location.search + (location.hash && location.hash != '#' ? '#reloadPage,' + location.hash.substr(1) : '#reloadPage,gotoAddCommentForm' );
+						socRedirect = encodeURIComponent(socRedirect);
+
+						try{var providers = {};} catch (e) {}
+
+						function socialRepost(entry_link, message) {
+							console.log('Check witch Social network is connected.');
+
+							var soc_type = jQuery("form#acform input[name='soc_type']").val();
+							switch (parseInt(soc_type)) {
+							case 101:
+								console.log('101');
+								var newWin = window.open('https://vk.com/share.php?url='+entry_link+'&description='+message+'&noparse=1','window','width=640,height=500,scrollbars=yes,status=yes');
+							  break;
+							case 102:
+								console.log('102');
+								var newWin = window.open('https://www.facebook.com/sharer/sharer.php?u='+entry_link+'&description='+encodeURIComponent(message),'window','width=640,height=500,scrollbars=yes,status=yes');
+							  break;
+							case 103:
+								console.log('103');
+
+							  break;
+							case 104:
+								console.log('104');
+
+							  break;
+							case 105:
+								console.log('105');
+
+							  break;
+							case 106:
+								console.log('106');
+
+							  break;
+							case 107:
+								console.log('107');
+								var newWin = window.open('https://twitter.com/intent/tweet?source=webclient&url='+entry_link+'&text='+encodeURIComponent(message)+'&callback=?','window','width=640,height=500,scrollbars=yes,status=yes');
+							  break;
+							case 108:
+								console.log('108');
+
+							  break;
+							case 109:
+								console.log('109');
+								var newWin = window.open('https://plusone.google.com/_/+1/confirm?hl=en&url='+entry_link,'window','width=600,height=610,scrollbars=yes,status=yes');
+							  break;
+							}
+						}
+
+						function updateSocialDetails(type) {
+							console.log('updateSocialDetails');
+							jQuery.getScript('//sys000.ucoz.net/cgi/uutils.fcg?a=soc_comment_get_data&site=ebzfar&type='+type, function() {
+								jQuery("form#socail_details input[name='social']").val(type);
+								jQuery("form#socail_details input[name=data]").val(data[type]);
+								jQuery("form#acform input[name=data]").val(data[type]);
+								_uPostForm('socail_details',{type:'POST',url:'/index/778', data:{'m':'3', 'vi_commID': '', 'catPath': ''}});
+							});
+						}
+
+						function logoutSocial() {
+							console.log('delete cookie');
+							delete_msg_cookie();
+							jQuery.getScript('//sys000.ucoz.net/cgi/uutils.fcg?a=soc_comment_clear_data&site=ebzfar', function(){window.location.reload();});
+						}
+
+						function utf8_to_b64( str) {
+							return window.btoa(encodeURIComponent( escape( str )));
+						}
+
+						function b64_to_utf8( str) {
+							return unescape(decodeURIComponent(window.atob( str )));
+						}
+
+						function getCookie(c_name) {
+							var c_value = " " + document.cookie;
+							var c_start = c_value.indexOf(" " + c_name + "=");
+							if (c_start == -1) {
+								c_value = null;
+							} else {
+								c_start = c_value.indexOf("=", c_start) + 1;
+								var c_end = c_value.indexOf(";", c_start);
+								if (c_end == -1) {
+									c_end = c_value.length;
+								}
+								c_value = unescape(c_value.substring(c_start,c_end));
+							}
+							return c_value;
+						}
+
+						var delete_msg_cookie = function() {
+							console.log('delete_msg_cookie');
+							document.cookie = 'msg=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+						};
+
+						function preSaveMessage() {
+							var msg = jQuery("form#acform textarea").val();
+							if (msg.length > 0) {
+								document.cookie = "msg="+utf8_to_b64(msg)+";"; //path="+window.location.href+";
+							}
+						}
+
+						function googleAuthHandler(social) {
+							if (!social) return
+							if (!social.enabled || !social.handler) return
+
+							social.window = window.open(social.url, '_blank', 'width=600,height=610');
+							social.intervalId = setInterval(function(social) {
+								if (social.window.closed) {
+									clearInterval(social.intervalId)
+									self.location.reload()
+								}
+							}, 1000, social)
+						}
+
+						
+
+						(function(jq) {
+							jq(document).ready(function() {
+								
+																
+								jQuery(".uf-tooltip a.uf-tt-exit").attr('href','/index/10');
+								console.log('ready - update details');
+								console.log('scurrent', window.scurrent);
+								if (typeof(window.scurrent) != 'undefined' && scurrent > 0 && data[scurrent]) {
+									jQuery("#postFormContent").html('<div style="width:100%;text-align:center;padding-top:50px;"><img alt="" src="/.s/img/ma/m/i3.gif" border="0" width="220" height="19" /></div>');
+
+									jQuery("form#socail_details input[name=social]").val(scurrent);
+									jQuery("form#socail_details input[name=data]").val(data[scurrent]);
+									updateSocialDetails(scurrent);
+								}
+								jQuery('a#js-ucf-start').on('click', function(event) {
+									event.preventDefault();
+									if (scurrent == 0) {
+										window.open("//sys000.ucoz.net/cgi/uutils.fcg?a=soc_comment_auth",'SocialLoginWnd','width=500,height=350,resizable=yes,titlebar=yes');
+									}
+								});
+
+								jQuery('.uauth-small-links a.login-with').on('click', function(event) {
+									event.preventDefault();
+									let social = providers[ this.dataset.social ];
+
+									if (typeof(social) != 'undefined' && social.enabled == 1) {
+										if (social.handler) {
+											social.handler(social);
+										} else {
+											// unetLoginWnd
+											let newWin = window.open(social.url, "_blank", 'width=600,height=610,scrollbars=yes,status=yes');
+										}
+									}
+								});
+							});
+						})(jQuery);
+					</script>
+				</div>
+
+<div class="uForm uComForm">
+	
+	<div class="uauth-small-links uauth-links-set">Войдите: <a href="javascript:;" onclick="window.open('https://login.uid.me/?site=ebzfar&ref='+escape(location.protocol + '//' + ('www.bzfar.org' || location.hostname) + location.pathname + ((location.hash ? ( location.search ? location.search + '&' : '?' ) + 'rnd=' + Date.now() + location.hash : ( location.search || '' )))),'uidLoginWnd','width=580,height=450,resizable=yes,titlebar=yes');return false;" class="login-with uid" title="Войти через uID" rel="nofollow"><i></i></a><a href="javascript:;" onclick="return uSocialLogin('vkontakte');" data-social="vkontakte" class="login-with vkontakte" title="Войти через ВКонтакте" rel="nofollow"><i></i></a><a href="javascript:;" onclick="return uSocialLogin('facebook');" data-social="facebook" class="login-with facebook" title="Войти через Facebook" rel="nofollow"><i></i></a><a href="javascript:;" onclick="return uSocialLogin('yandex');" data-social="yandex" class="login-with yandex" title="Войти через Яндекс" rel="nofollow"><i></i></a><a href="javascript:;" onclick="return uSocialLogin('google');" data-social="google" class="login-with google" title="Войти через Google" rel="nofollow"><i></i></a><a href="javascript:;" onclick="return uSocialLogin('ok');" data-social="ok" class="login-with ok" title="Войти через Одноклассники" rel="nofollow"><i></i></a></div>
+	<div class="uComForm-inner">
+		<span class="ucf-avatar"><img src="/.s/img/icon/social/noavatar.png" alt="avatar" /></span>
+		<div class="ucf-content ucf-start-content">
+			<ul class="uf-form ucf-form">
+				<li><textarea class="uf-txt-input commFl js-start-txt" placeholder="Оставьте ваш комментарий..."></textarea>
+				<li><button class="uf-btn" onclick="preSaveMessage(); window.open('/index/800?ref='+window.location.href, 'SocialLoginWnd', 'width=500,height=410,resizable=yes,titlebar=yes');">Отправить</button>
+			</ul>
+		</div>
+	</div>
+	
+</div><input type="hidden" name="ssid" value="312705663536003312350" />
+					<input type="hidden" name="a"  value="36" />
+					<input type="hidden" name="m"  value="3" />
+					<input type="hidden" name="id" value="120" />
+					
+					<input type="hidden" name="soc_type" id="csoc_type" />
+					<input type="hidden" name="data" id="cdata" />
+				</form>
+			</div>
+<!-- </body> -->
+	</div>
+</div>
+	<aside class="sidebar">
+		<!--U1CLEFTER1Z--><!-- <block6> -->
+
+<section class="sidebox">
+					<div class="sidebox-ttl"><!-- <bt> --><!--<s3163>-->Поиск по сайту<!--</s>--><!-- </bt> --></div>
+					<div class="sidebox-bd clr"><div align="center"><!-- <bc> -->
+		<div class="searchForm">
+			<form onsubmit="this.sfSbm.disabled=true" method="get" style="margin:0" action="/search/">
+				<div align="center" class="schQuery">
+					<input type="text" name="q" maxlength="30" size="20" class="queryField" />
+				</div>
+				<div align="center" class="schBtn">
+					<input type="submit" class="searchSbmFl" name="sfSbm" value="Найти" />
+				</div>
+				<input type="hidden" name="t" value="0">
+			</form>
+		</div><!-- </bc> --></div></div>
+			</section>
+
+<!-- </block6> -->
+
+<!-- <block1> -->
+
+<!-- </block1> -->
+
+<!-- <block2> -->
+
+<!-- </block2> -->
+
+<!-- <block3> -->
+
+<!-- </block3> -->
+
+<!-- <block4> -->
+
+<!-- </block4> -->
+
+<!-- <block5> -->
+
+<section class="sidebox">
+					<div class="sidebox-ttl"><!-- <bt> --><!--<s5351>-->Категории раздела<!--</s>--><!-- </bt> --></div>
+					<div class="sidebox-bd clr"><!-- <bc> --><table border="0" cellspacing="1" cellpadding="0" width="100%" class="catsTable"><tr>
+					<td style="width:100%" class="catsTd" valign="top" id="cid56">
+						<a href="/publ/algorithms_programming/algorithms/56" class="catName">Algorithms</a>
+						 <span class="catNumData" style="unicode-bidi:embed;">[28]</span>
+						<div class="catDescr">Алгоритмы. Типы алгоритмов</div>
+					</td></tr><tr>
+					<td style="width:100%" class="catsTd" valign="top" id="cid43">
+						<a href="/publ/algorithms_programming/flowcharts/43" class="catName">Flowcharts</a>
+						 <span class="catNumData" style="unicode-bidi:embed;">[10]</span>
+						<div class="catDescr">Блок-схемы</div>
+					</td></tr><tr>
+					<td style="width:100%" class="catsTd" valign="top" id="cid42">
+						<a href="/publ/algorithms_programming/programming_languages/42" class="catNameActive">Programming languages</a>
+						 <span class="catNumData" style="unicode-bidi:embed;">[94]</span>
+						<div class="catDescr">Языки программирования</div>
+					</td></tr><tr>
+					<td style="width:100%" class="catsTd" valign="top" id="cid48">
+						<a href="/publ/algorithms_programming/fundamentals_of_programming/48" class="catName">Fundamentals of programming</a>
+						 <span class="catNumData" style="unicode-bidi:embed;">[70]</span>
+						<div class="catDescr">Основы программирования</div>
+					</td></tr><tr>
+					<td style="width:100%" class="catsTd" valign="top" id="cid24">
+						<a href="/publ/algorithms_programming/data_types/24" class="catName">Data types</a>
+						 <span class="catNumData" style="unicode-bidi:embed;">[27]</span>
+						
+					</td></tr><tr>
+					<td style="width:100%" class="catsTd" valign="top" id="cid25">
+						<a href="/publ/algorithms_programming/data_structures/25" class="catName">Data structures</a>
+						 <span class="catNumData" style="unicode-bidi:embed;">[41]</span>
+						
+					</td></tr><tr>
+					<td style="width:100%" class="catsTd" valign="top" id="cid54">
+						<a href="/publ/algorithms_programming/debugging/54" class="catName">Debugging</a>
+						 <span class="catNumData" style="unicode-bidi:embed;">[8]</span>
+						<div class="catDescr">Отладка программы</div>
+					</td></tr></table><!-- </bc> --></div>
+			</section>
+
+<!-- </block5> -->
+
+
+
+<!-- <block7> -->
+
+<section class="sidebox">
+					<div class="sidebox-ttl"><!-- <bt> --><!--<s5158>-->Вход на сайт<!--</s>--><!-- </bt> --></div>
+					<div class="sidebox-bd clr"><!-- <bc> --><div id="uidLogForm" align="center"><a href="javascript:;" onclick="window.open('https://login.uid.me/?site=ebzfar&ref='+escape(location.protocol + '//' + ('www.bzfar.org' || location.hostname) + location.pathname + ((location.hash ? ( location.search ? location.search + '&' : '?' ) + 'rnd=' + Date.now() + location.hash : ( location.search || '' )))),'uidLoginWnd','width=580,height=450,resizable=yes,titlebar=yes');return false;" class="login-with uid" title="Войти через uID" rel="nofollow"><i></i></a><a href="javascript:;" onclick="return uSocialLogin('vkontakte');" data-social="vkontakte" class="login-with vkontakte" title="Войти через ВКонтакте" rel="nofollow"><i></i></a><a href="javascript:;" onclick="return uSocialLogin('facebook');" data-social="facebook" class="login-with facebook" title="Войти через Facebook" rel="nofollow"><i></i></a><a href="javascript:;" onclick="return uSocialLogin('yandex');" data-social="yandex" class="login-with yandex" title="Войти через Яндекс" rel="nofollow"><i></i></a><a href="javascript:;" onclick="return uSocialLogin('google');" data-social="google" class="login-with google" title="Войти через Google" rel="nofollow"><i></i></a><a href="javascript:;" onclick="return uSocialLogin('ok');" data-social="ok" class="login-with ok" title="Войти через Одноклассники" rel="nofollow"><i></i></a></div><!-- </bc> --></div>
+			</section>
+
+<!-- </block7> -->
+
+
+
+<!-- <block8> -->
+
+<!-- </block8> -->
+
+
+
+
+
+<!-- <block11> -->
+
+<section class="sidebox">
+					<div class="sidebox-ttl"><!-- <bt> --><!--<s5207>-->Наш опрос<!--</s>--><!-- </bt> --></div>
+					<div class="sidebox-bd clr"><!-- <bc> --><script>function pollnow206(){document.getElementById('PlBtn206').disabled=true;_uPostForm('pollform206',{url:'/poll/',type:'POST'});}function polll206(id,i){_uPostForm('',{url:'/poll/'+id+'-1-'+i+'-206',type:'GET'});}</script><div id="pollBlock206"><form id="pollform206" onsubmit="pollnow206();return false;"><div class="pollBlock">
+<div class="pollQue"><b>Считаете ли вы, что образовательная геймификация мотивирует учащихся к активному изучению предмета? (можно выбрать несколько опций)</b></div>
+<div class="pollAns"><div class="answer"><input id="a2061" type="checkbox" name="answer" value="1" style="vertical-align:middle;" /> <label style="vertical-align:middle;display:inline;" for="a2061">Да, это повышает уровень качества обучения</label></div>
+<div class="answer"><input id="a2062" type="checkbox" name="answer" value="2" style="vertical-align:middle;" /> <label style="vertical-align:middle;display:inline;" for="a2062">Да, повышается активность учащихся на уроках</label></div>
+<div class="answer"><input id="a2063" type="checkbox" name="answer" value="3" style="vertical-align:middle;" /> <label style="vertical-align:middle;display:inline;" for="a2063">Да, развиваются навыки необходимые для решения проблем</label></div>
+<div class="answer"><input id="a2064" type="checkbox" name="answer" value="4" style="vertical-align:middle;" /> <label style="vertical-align:middle;display:inline;" for="a2064">Нет, пропадает качество обучения</label></div>
+<div class="answer"><input id="a2065" type="checkbox" name="answer" value="5" style="vertical-align:middle;" /> <label style="vertical-align:middle;display:inline;" for="a2065">Нет, это не способствует усвоению материала</label></div>
+<div class="answer"><input id="a2066" type="checkbox" name="answer" value="6" style="vertical-align:middle;" /> <label style="vertical-align:middle;display:inline;" for="a2066">Нет, игру ученики всегда воспринимают только игрой</label></div>
+<div id="pollSbm206" class="pollButton"><input class="pollBut" id="PlBtn206" type="submit" value="Проголосовать" /></div>
+<input type="hidden" name="ssid" value="312705663536003312350" />
+<input type="hidden" name="id"   value="4" />
+<input type="hidden" name="a"    value="1" />
+<input type="hidden" name="ajax" value="206" /></div>
+<div class="pollLnk"> <a href="javascript:;" rel="nofollow" onclick="new _uWnd('PollR','Результаты опроса',660,200,{closeonesc:1,maxh:400},{url:'/poll/4'});return false;">Результаты</a> | <a href="javascript:;" rel="nofollow" onclick="new _uWnd('PollA','Архив опросов',660,250,{closeonesc:1,maxh:400,max:1,min:1},{url:'/poll/0-2'});return false;">Архив опросов</a> </div>
+<div class="pollTot">Всего ответов: <b>152</b></div>
+</div></form></div><!-- </bc> --></div>
+			</section>
+
+<!-- </block11> -->
+
+<!-- <block12> -->
+
+<!-- </block12> -->
+
+<!-- <block13> -->
+<section class="sidebox">
+					<div class="sidebox-ttl"><!-- <bt> --><!--<s5204>-->Посетите!<!--</s>--><!-- </bt> --></div>
+					<div class="sidebox-bd clr"><!-- <bc> --><!--<s1546>-->
+<li><a href="https://nis.edu.kz/" target="_blank" rel="noopener nofollow">Официальный сайт АОО Назарбаев Интеллектуальные школы</a></li>
+<li><a href="https://kst.nis.edu.kz" target="_blank" rel="noopener nofollow">Сайт НИШ ФМН г.Костанай</a></li>
+
+<li><a href="https://ictlab.kz/" target="_blank" rel="noopener nofollow">ICT Laboratory</a></li>
+<!--</s>--><!-- </bc> --></div>
+			</section>
+<!-- </block13> -->
+
+<!-- <block9> -->
+
+<!-- </block9> -->
+
+<!-- <block10> -->
+
+<!-- </block10> -->
+
+<!-- <block14> -->
+
+<section class="sidebox">
+					<div class="sidebox-ttl"><!-- <bt> --><!--<s5195>-->Статистика<!--</s>--><!-- </bt> --></div>
+					<div class="sidebox-bd clr"><div align="center"><!-- <bc> --><a rel="nofollow" href="/panel/?a=ustat&u=bzfar&d=e&il=ru" target="_blank" title="uCoz Counter">
+	<img alt="" src="/stat/1708373742" height="31" width="88" /></a><hr /><div class="tOnline" id="onl1">Онлайн всего: <b>1</b></div> <div class="gOnline" id="onl2">Гостей: <b>1</b></div> <div class="uOnline" id="onl3">Пользователей: <b>0</b></div><!-- </bc> --></div></div>
+			</section>
+
+<!-- </block14> -->
+
+<!--/U1CLEFTER1Z-->
+	</aside>
+
+<!-- </middle> -->
+</section>
+
+<!--U1BFOOTER1Z-->
+<footer class="footer">
+	<div class="cont-wrap clr">
+		<div class="copy">
+			<!-- <copy> -->Copyright BZFAR © 2024<!-- </copy> -->
+		</div>
+
+
+ <div class="ucoz-copy">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter64405015 = new Ya.Metrika({id:64405015,accurateTrackBounce:true, trackLinks:true, clickmap:true, params: {__ym: {isFromApi: 'yesIsFromApi'}}});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/64405015" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+</div>
+
+ <div class="login-b">
+	
+	    <a title="Регистрация" href="/register"><!--<s3089>-->Регистрация<!--</s>--></a>
+	    | <a title="Вход" href="javascript:;" rel="nofollow" onclick="loginPopupForm(); return false;"><!--<s3087>-->Вход<!--</s>--></a>
+	
+	
+	    | <a href="https://www.bzfar.org/publ/rss/" title="RSS">RSS</a>
+	
+</div>
+
+</div>
+
+
+ </footer>
+<!--/U1BFOOTER1Z-->
+
+
+
+<script src="/.s/t/2001/template.min.js"></script>
+</body>
+</html>
+
+
+<!-- uSocial -->
+<script async src="https://usocial.pro/usocial/usocial.js?v=6.0.0" data-script="usocial" charset="utf-8"></script>
+<div class="uSocial-Share" data-pid="5bef609b1ec99318d31622cb3306f8d6" data-type="share" data-options="round-rect,style1,default,bottom,bg,slide-down,size32,eachCounter1,counter0" data-social="vk,fb,twi,ok,lin,spoiler" data-mobile="vi,wa,sms"></div>
+<!-- /uSocial --><script>
+		var uSocial = document.querySelectorAll(".uSocial-Share") || [];
+			for (var i = 0; i < uSocial.length; i++) {
+				if (uSocial[i].parentNode.style.display === 'none') {
+					uSocial[i].parentNode.style.display = '';
+				}
+			}
+	</script>
+<!-- 0.1908021 (s67) -->

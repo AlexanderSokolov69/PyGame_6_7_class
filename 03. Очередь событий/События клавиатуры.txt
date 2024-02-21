@@ -1,7 +1,7 @@
 
 pygame Constant	ASCII	Description
 K_BACKSPACE	\b	backspace
-K_TAB	\t	tab
+K_TAB   	\t	tab
 K_CLEAR	 	clear
 K_RETURN	\r	Клавиша Enter
 K_PAUSE	 	pause

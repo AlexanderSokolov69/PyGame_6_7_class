@@ -5,7 +5,7 @@
 
 size = WIDTH, HEIGHT = 800, 600
 FPS = 70
-colors = {"screen": "darkblue",
+colors = {"screen": "darkgreen",
           "pong": "yellow",
           "racket": "gray",
           "wall": "brown",

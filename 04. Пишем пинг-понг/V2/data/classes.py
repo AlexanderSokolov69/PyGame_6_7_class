@@ -28,6 +28,7 @@ class Ball:
         #                                self.y - self.size // 2,
         #                                self.size, self.size))
         pg.draw.circle(scr, self.color, (self.x, self.y), self.size // 2)
+        pg.draw.circle(scr, "red", (self.x, self.y), self.size // 2, 4)
         out = self.my_font.render(f"{self.score[0]}:{self.score[1]}", True, colors["score"])
         w = out.get_width()
         scr.blit(out, (self.text_coord[0] - w // 2, self.text_coord[1]))

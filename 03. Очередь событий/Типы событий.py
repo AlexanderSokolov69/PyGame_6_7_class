@@ -2,6 +2,7 @@
 # coding:utf-8
 import pygame as pg
 import pygame.locals as lc
+import json
 
 
 size = width, height = 800, 600
@@ -19,3 +20,4 @@ while not end_game:
         print(f"{event}")
 
 pg.quit()
+json.d

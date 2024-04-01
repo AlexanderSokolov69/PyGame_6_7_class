@@ -14,6 +14,7 @@ def load_pic(pic):
     return pg.image.load('__tmp.png')
 
 
+L_PANEL = 300
 F_WIDTH = 10
 F_HEIGHT = 15
 SIZE = 50
@@ -72,9 +73,9 @@ BRICK_TYPE = [
 
 
 class Brick:
-    def __init__(self):
+    def __init__(self, width=F_WIDTH):
         brick = choice(BRICK_TYPE)
-        self.x = F_WIDTH // 2
+        self.x = width // 2
         self.y = 2
         self.state = 0
         self.image = brick[0]
@@ -82,9 +83,13 @@ class Brick:
         self.rect = self.image.get_rect()
         self.center = self.rect.center
 
-    def draw(self, scr):
-        for x, y in self.body[self.state]:
-            scr.blit(self.image, ((self.x + x) * SIZE, (self.y + y) * SIZE))
+    def draw(self, scr, dx=0, dy=0):
+        if dx == 0 and dy == 0:
+            for x, y in self.body[self.state]:
+                scr.blit(self.image, ((self.x + x) * SIZE, (self.y + y) * SIZE))
+        else:
+            for x, y in self.body[self.state]:
+                scr.blit(self.image, ((dx + x) * SIZE, (dy + y) * SIZE))
 
     def rotate(self, data: set, side=1):
         old_state = self.state
@@ -164,18 +169,44 @@ class Bricks:
             self.data = new_data
         return counter
 
+
+class Panel:
+    def __init__(self, width=L_PANEL, height=(F_HEIGHT + 2) * SIZE, color='gray'):
+        self.color = color
+        self.surf = pg.Surface((width, height))
+        pg.draw.rect(self.surf, self.color, (0, 0, width, height))
+        pg.draw.rect(self.surf, 'white', (2, 2, width - 4, height - 4), 4)
+        pg.draw.rect(self.surf, 'black', (8, 220, width - 16, height - 228), 2)
+        self.font = pg.font.Font(None, size=40)
+        text = self.font.render('Next:', True, 'red', self.color)
+        self.surf.blit(text, (16, 16))
+        text = self.font.render('Счёт:', True, 'red', self.color)
+        self.surf.blit(text, (16, 240))
+
+    def draw(self, scr: pg.Surface, brick: Brick, score=0):
+        copy_surf = self.surf.copy()
+        text = self.font.render(f'{score}', True, 'black', self.color)
+        copy_surf.blit(text, (100, 240))
+        brick.draw(copy_surf, 2, 2)
+        scr.blit(copy_surf, (scr.get_width() - self.surf.get_width(), 0))
+
+
+
 def run():
     clock = pg.time.Clock()
-    FPS = 30
-    time_step = 0.5
+    FPS = 60
+    new_time_step = 0.5
+    time_step = new_time_step
     score = 0
-    screen = pg.display.set_mode((F_WIDTH * SIZE, (F_HEIGHT + 2) * SIZE))
+    screen = pg.display.set_mode((F_WIDTH * SIZE + L_PANEL, (F_HEIGHT + 2) * SIZE))
+    pg.display.set_caption("ТЕТРИС")
     stop_game = False
+    panel = Panel()
     obj_moved = Brick()
+    obj_next = Brick()
     obj_static = Bricks()
     step_count = 0
     while not stop_game:
-        pg.display.set_caption(f"Счет: {score}")
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 stop_game = True
@@ -190,13 +221,17 @@ def run():
                     obj_moved.slide(obj_static.get_data(), -1)
                 elif event.key == lc.K_RIGHT and obj_moved.get_min_max()[1] < F_WIDTH - 1:
                     obj_moved.slide(obj_static.get_data(), 1)
+                elif event.key == lc.K_SPACE:
+                    time_step = 0
 
         if step_count > FPS * time_step:
             if obj_moved.test_shift(obj_static.get_data(), dy=1) and obj_moved.get_min_max_y()[1] < F_HEIGHT + 1:
                 obj_moved.down()
             else:
                 obj_static.add(obj_moved)
-                obj_moved = Brick()
+                time_step = new_time_step
+                obj_moved = obj_next
+                obj_next = Brick()
                 if not obj_moved.test_shift(obj_static.get_data()):
                     stop_game = True
             step_count = 0
@@ -206,6 +241,7 @@ def run():
         screen.fill('black')
         obj_moved.draw(screen)
         obj_static.draw(screen)
+        panel.draw(screen, obj_next, score)
         pg.display.flip()
         clock.tick(FPS)
         step_count += 1
@@ -218,6 +254,6 @@ if __name__ == "__main__":
 
     while not stop_game:
         for event in pg.event.get():
-            if event.type == pg.QUIT:
+            if event.type == pg.QUIT or event.type == lc.KEYDOWN:
                 stop_game = True
     pg.quit()

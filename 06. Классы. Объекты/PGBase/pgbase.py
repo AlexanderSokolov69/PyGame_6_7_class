@@ -9,21 +9,16 @@ class PGBase:
         self.speed = speed
         self.dx = 0
         self.dy = 0
-        self.perc = 25
-        self.image = self.create()
-        self.rect = self.image.get_rect()
-
-    def animate(self):
         self.image = self.create()
         self.rect = self.image.get_rect()
 
     def create(self):
         scr = pg.Surface((100, 100), pg.SRCALPHA, 32)
-        # pg.draw.circle(scr, 'red', (50, 50), 50)
-        # pg.draw.circle(scr, 'white', (50, 50), 40)
-        # pg.draw.circle(scr, 'yellow', (50, 50), 30)
-        angle = self.perc * 2 * math.pi / 100
-        pg.draw.arc(scr, 'red', (0, 0, 100, 100), 0, angle, 50)
+        pg.draw.circle(scr, 'red', (50, 50), 50)
+        pg.draw.circle(scr, 'white', (50, 50), 40)
+        pg.draw.circle(scr, 'yellow', (50, 50), 30)
+        # angle = self.perc * 2 * math.pi / 100
+        # pg.draw.arc(scr, 'red', (0, 0, 100, 100), 0, angle, 50)
         return scr
 
     def check_list(self, rects: list[pg.Rect]):
@@ -32,8 +27,6 @@ class PGBase:
     def move(self):
         self.x += self.dx
         self.y += self.dy
-        self.perc = (self.perc + 1) % 100
-        self.animate()
 
     def draw(self, screen: pg.Surface):
         screen.blit(self.image, (self.x - self.rect.width // 2,

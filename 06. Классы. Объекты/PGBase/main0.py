@@ -31,6 +31,9 @@ while not stop_game:
             else:
                 dy = 0
             obj.change_move(dx, dy)
+        if event.type == pg.KEYDOWN:
+            if event.key == pg.K_SPACE:
+                obj.change_move(0, 0)
 
     obj.move()
     screen.fill('blue')

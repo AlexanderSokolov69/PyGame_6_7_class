@@ -133,22 +133,25 @@ class Bricks:
         self.image = None
 
     def add(self, brick: Brick):
-        self.image = brick.image
+        image = brick.image
         for pos in brick.get_area():
-            self.data.add(pos)
+            self.data.add((image, pos))
 
     def draw(self, scr):
-        for x, y in self.data:
-            scr.blit(self.image, ((x) * SIZE, (y) * SIZE))
+        for image, pos in self.data:
+            scr.blit(image, ((pos[0]) * SIZE, (pos[1]) * SIZE))
 
     def get_data(self):
         return self.data
 
     def check_lines(self):
         ok = []
+        test_data = set()
+        for image, pos in self.data:
+            test_data.add(pos)
         for y in range(F_HEIGHT + 2):
             for x in range(F_WIDTH):
-                if (x, y) not in self.data:
+                if (x, y) not in test_data:
                     break
             else:
                 ok.append(y)

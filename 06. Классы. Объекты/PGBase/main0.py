@@ -2,6 +2,8 @@ import pygame as pg
 from pgbase import PGBase
 
 
+
+
 FPS = 30
 WIDTH, HEIGHT = 800, 600
 
